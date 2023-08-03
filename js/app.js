@@ -13,7 +13,11 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const emailInput = document.querySelector("input#email");
+    const passwordInput = document.querySelector("input#password");
     const formButton = document.querySelector("button");
 
-    formButton.textContent = console.log(emailInput.value);
+    formButton.textContent = console.log({
+        email: emailInput.value,
+        password: passwordInput.value,
+    });
 });
